@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伸缩盒布局</title>
+    <style>
+        body{
+            margin:0; 
+        }
+        .product{
+            display: flex;
+            flex-direction: row;
+            background-color: #cccccc;
+        }
+        .product>div{
+            height: 100px;
+        }
+        .product>div.left{
+            width: 200px;
+            background-color: bisque;
+            flex: 2；
+
+        }
+        .product>div.right{
+            
+            background-color: pink ;
+            flex: 1;/*占剩余部分的一份*/
+
+        }
+    
+    </style>
+</head>
+<body>
+        <div class="product">
+                <div class="left">left</div>
+                <div class="right">right</div>
+              </div>  
+</body>
+</html>

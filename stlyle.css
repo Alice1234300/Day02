@@ -1,0 +1,25 @@
+h1{
+    color: aquamarine;
+    font-size: 40px
+}
+.right{
+    color: brown;
+    font-size: 46px
+    text-align
+}
+#t1{
+    color: blue;
+}
+#t2,.right{
+    border: 1px solid #ccc;
+}
+h1#t1{background-color: darksalmon;}
+
+.header li{color: red;}
+.header>ul{border:1px solid red}
+/*子元素过滤器*/
+.header>ul>li:nth-child(2){background-color: pink;}/*li为ul的第2个孩子节点*/
+/*当光标悬浮到li上*/
+.header>ul>li:hover{background-color: rgb(165, 127, 133);}
+/*伪元素过滤器*/
+ul::after{content:"hello"}/*在ul子元素的最后插入伪元素*ul标签内部插入子节点*/

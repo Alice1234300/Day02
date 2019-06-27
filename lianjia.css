@@ -1,0 +1,22 @@
+/*重置样式*/
+html{
+    font-size: 14px;
+    color: #333333
+}
+body{
+    margin: 0%
+}
+  
+.wrapper{
+    width: 1200px;
+    margin: 0 auto; /*水平居中*/
+}
+/*快捷导航*/
+.fast_nav .nav{
+    float: right;
+    background-color: #fff;
+}    
+.fast_nav .other{
+float: right;
+background-color: #fff;
+}

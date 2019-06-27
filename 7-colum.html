@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两列布局——子元素都浮动</title>
+    <style>
+        .product{
+            background-color:thistle;
+        }
+        .product::after{ /*为了让父元素有高度从而显示*/
+
+            content: "";
+            display: block;/*自动换行*/
+            clear: both;/*让其左右两边都没有float元素*/
+        }
+        .product>div{
+            height: 100px;
+            float: left;
+
+        }
+        .product>div.left{
+            width: 200px;
+            background-color: bisque
+
+        }
+        .product>div.right{
+            width:300px;
+            background-color: pink  
+
+        }
+    </style>
+<body>
+        <div class="product">
+                <div class="left">导航</div>
+                <div class="right">以下</div>
+              </div>  
+</body>
+</html>
